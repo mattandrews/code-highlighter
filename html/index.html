@@ -7,14 +7,32 @@
     <!-- {microapp-javascript:../js/prettify.js} -->
     
     <script type="text/javascript">
+    
     jQ(document).ready(function(){
         prettyPrint();
+    
+    
+        jQ('a#code-highlighter-toggle').click(function(){
+            if(jQ('.prettyprint_disabled').length == 0) {
+                jQ('.prettyprint').find('*').removeClass();
+                jQ('.prettyprint').addClass('prettyprint_disabled').removeClass('prettyprint');
+            } else {
+                jQ('.prettyprint_disabled').addClass('prettyprint').removeClass('prettyprint_disabled');
+                prettyPrint();
+            }
+        });
+    
     });
     </script>
+    
+
     
 </head>
 <body>
 
+    <p class="b3">
+        <a href="javascript://" id="code-highlighter-toggle">Toggle code formatting</a>
+    </p>
 
 </body>
 </html>
