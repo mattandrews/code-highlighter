@@ -11,8 +11,8 @@
 .atn { color: #606; }
 .atv { color: #080; }
 .dec { color: #606; }
-pre.prettyprint { padding: 2px 5px; border: 1px solid #888; overflow: auto; }
-pre.prettyprint_disabled { overflow: auto; }
+pre.prettyprint { padding: 2px 5px; border: 1px solid #888; overflow: auto; margin-bottom: 10px; }
+pre.prettyprint_disabled { overflow: auto; margin-bottom: 10px; }
 
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums { margin-top: 0; margin-bottom: 0 } /* IE indents via margin-left */
